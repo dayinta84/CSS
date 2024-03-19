@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            display: none;
+            background-color: darkgray;
+            padding: 20px;
+        }
+        div:hover p { /*:hover = css pseudo class*/
+            display: block;
+            color: rgb(40, 87, 242);
+        }
+        
+        div:hover a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div> Letakkan kursor disini untuk melihat div element
+        <p>Saya adalah element p</p>
+        <p><a href="https://id.wikipedia.org/wiki/Buku">link</a></p>
+    </div>
+</body>
+</html>
