@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+    <style>
+        div p { /*no 1*/
+            color: red;
+        }
+        div > p { /*no 2*/
+            background-color: yellow;
+        }
+        div + p { /*no 3*/
+            background-color: darkgrey;
+        }
+        div ~ p { /*no 4*/
+            color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Paragraph 1. Mengatur gaya untuk semua elemen p yang berada di dalam sebuah elemen div. 
+            Dengan aturan ini, warna teks untuk paragraf-paragraf tersebut diubah menjadi merah</p>
+        <p>Paragraph 2. Semua elemen p yang menjadi anak langsung dari elemen div, latar belakang 
+            paragraf tersebut akan diubah menjadi kuning</p>
+    </div>   
+    <p>Paragraph 3. Elemen p yang berada langsung setelah elemen div, tanpa adanya elemen lain 
+        di antara keduanya, latar belakang paragraf tersebut akan diubah menjadi abu-abu gelap</p>
+    <p>Paragraph 4. Mengatur gaya untuk semua elemen p yang berada setelah elemen div dan berada di dalam 
+        konteks yang sama, artinya elemen-elemen tersebut adalah saudara atau tetangga sejajar. Dengan aturan ini, 
+        warna teks untuk paragraf-paragraf tersebut diubah menjadi biru muda</p>
+</body>
+</html>
