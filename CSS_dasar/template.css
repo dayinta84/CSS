@@ -1,0 +1,83 @@
+* {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: blue;
+            padding: 20px;
+            text-align: left;
+            color: yellow;
+        }
+        h2 {
+            color: yellow;
+            margin: 0;
+            font-size: 45px;
+            font-weight: normal;
+        }
+
+        header h4 {
+            color: white;
+            margin-top: 0; /* Menghapus margin top */
+            font-size: 30px;
+            font-weight: normal;
+            margin-bottom: 0;
+        }
+
+        nav {
+            float: left;
+            width: 20%; /* Mengubah lebar menjadi 20% dari kontainer induk */
+            height: 350px;
+            padding: 20px;
+            border-style: dashed;
+            border-width: 2px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%; /* Mengubah lebar menjadi 80% dari kontainer induk */
+            height: 350px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 5px; /* Menambahkan margin bottom */
+        }
+
+        article h2 {
+            margin-top: 5px; /* Menambahkan margin top */
+            font-weight: normal;
+            font-size: 23px;
+            color: black; /* Menetapkan warna teks menjadi hitam */
+        }
+        article p {
+            color: red;
+            font-size: 18px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .belajarhtml {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        footer {
+            background-color: #a1d3f4;
+            padding: 5px;
+            text-align: right;
+            color: rgb(10, 10, 10);
+        }
+        @media (max-width:600px) {
+            nav, article {
+                width: 100%; /* Mengubah lebar menjadi 100% pada layar berukuran kecil */
+                height: auto;
+            }
+        }
