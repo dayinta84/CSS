@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Flex Box</title>
+    <style>
+        .wadah_flex {
+            display: flex;
+            background-color: rgb(51, 129, 231);
+            flex-direction: column;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        .wadah_flex div {
+            background-color: rgb(43, 238, 72);
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>Skenario 1 : Ketika menerapkan <i>display: flex;</i> pada sebuah elemen, anak-anak elemen tersebut secara otomatis 
+        akan disusun secara sejajar, berdasarkan arah defaultnya (dari kiri ke kanan untuk bahasa yang ditulis dari 
+        kiri ke kanan seperti Bahasa Inggris)</p>
+    <p>Skenario 2 : Setiap elemen <i>div</i> di dalam <i>.wadah_flex</i> akan memiliki latar belakang hijau, 
+        margin 10 piksel, padding 20 piksel, dan ukuran font 30 piksel.</p>
+    <p>Skenario 3 : Dengan menambahkan <i>flex-direction: column;</i> tata letak elemen-elemen di dalam <i>.wadah_flex</i> 
+        akan diubah menjadi vertikal daripada horizontal, sementara penampilan lainnya tetap sama seperti sebelumnya</p>
+    <p>Skenario 4 : Dengan menetapkan <i></i>flex-wrap: wrap;</i> elemen-elemen dalam <i>.wadah_flex</i> akan dibungkus 
+        ke baris baru jika tidak cukup ruang horizontal</p>
+    <p>Skenario 5 : Dengan menetapkan <i>flex-flow: row wrap;</i> ini sebenarnya menggabungkan dua properti, yaitu 
+        flex-direction (dalam hal ini, row untuk mengatur tata letak menjadi horizontal) dan flex-wrap (untuk 
+        memungkinkan pembungkusan elemen ke baris baru jika tidak cukup ruang horizontal).</p>
+    <p>Skenario 6 : Dengan menetapkan <i>justify-content: center;</i> elemen-elemen di dalam <i>.wadah_flex</i> akan 
+        dipusatkan secara horizontal di dalam wadah induknya.</p>
+</body>
+</html>
