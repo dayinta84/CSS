@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout2</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 50px;
+            background-color: #2196F3;
+            padding: 10px;
+            grid-template-columns: 10px 500px 20px 10px;
+        }
+        .item1 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+        }
+        .item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <div style="background-color: #2196F3;">
+        Skenario 1 : Elemen dengan kelas <i>.item1</i> akan menempati dua kolom di dalam grid, dimulai dari kolom kedua dan berakhir pada kolom kelima.
+        <br>Skenario 2 : nilai properti grid-template-columns memengaruhi tata letak dan lebar kolom dalam grid.
+        <br>Dengan menggunakan nilai auto, kolom akan menyesuaikan lebar dengan konten di dalamnya secara otomatis.
+        <br>Dengan menggunakan nilai yang ditentukan secara eksplisit seperti piksel, kolom akan memiliki lebar yang sudah ditentukan.
+        <br>Mengubah nilai properti grid-template-columns memungkinkan untuk mengatur tata letak dan lebar kolom sesuai kebutuhan desain grid.
+    
+    </div>
+</body>
+</html>
